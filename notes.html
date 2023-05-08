@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Note Taker - Notes</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Note Taker</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><button id="save-note-btn" class="hidden">Save</button></li>
+          <li><button id="new-note-btn">Write</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <h2>Notes</h2>
+        <ul id="notes">
+        </ul>
+      </aside>
+      <section>
+        <h2>Note Details</h2>
+        <form>
+          <div class="form-group">
+            <label for="note-title">Title</label>
+            <input type="text" id="note-title" name="title" />
+          </div>
+          <div class="form-group">
+            <label for="note-text">Text</label>
+            <textarea id="note-text" name="text"></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./js/notes.js"></script>
+  </body>
+</html>
+
